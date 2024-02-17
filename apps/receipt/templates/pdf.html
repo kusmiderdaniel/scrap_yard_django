@@ -11,6 +11,10 @@
             size: A4 landscape;
         }
 
+        th {
+            text-align: center;
+        }
+
         body {
             margin: 0mm 0mm 0mm 0mm;
             padding: 0;
@@ -58,7 +62,7 @@
 
         .team-info {
             font-size: 0.7em;
-            margin-bottom: 80px;
+            margin-bottom: 40px;
         }
 
         p {
@@ -82,7 +86,6 @@
 
         .info1, .info2 {
             font-size: 0.7em;
-            margin-top: 1.3rem;
             text-align: justify;
         }
 
@@ -164,17 +167,10 @@
                 </div>
             </div>
 
-            <hr>
-
             <div class="client-info">
                 <p><strong>SPRZEDAJĄCY:</strong> {{ receipt.client_name }}</p>
                 <p><strong>ADRES:</strong> {{ receipt.client_address1 }}, {{ receipt.client_zipcode }} {{ receipt.client_place }}</p>
                 <p><strong>NR DOKUMENTU:</strong> {{ receipt.client_doc_number }}</p>
-                <!-- <div class="container">
-                    <p class="left-split"><strong>Żródło pochodzenia:</strong></p>
-                    <p class="right-split"><strong>/ Rodzaj odpadu:</strong></p>
-                </div> -->
-                <div class="space-bottom"></div>
             </div>
 
             <hr>
@@ -229,12 +225,12 @@
             <hr>
 
             <div class="footer">
-                <div class="container info">
-                    <div class="info1">
+                <div class="columns info">
+                    <div class="col-12 info1">
                         <p><strong>Kopia formularza przyjęcia odpadów metali będzie przechowywana w zamkniętym pomieszczeniu, a po 5 LATACH ulegnie zniszczeniu. Dane osobowe nie będą udostępnione osobom niepowołanym.</strong></p>
                     </div>
 
-                    <div class="info2">
+                    <div class="col-12 info2">
                         <p>Sprzedający oświadcza, że przedmiot skupu stanowi jego własność, nie pochodzi z kradzieży i nie jest zajęty przez komornika. Sprzedający jest poinformowany o odpowiedzalności w przypadku składania fałszywego oświadczenia. Sprzedający wie, że cena skupu jest ceną umowną. Kwotę powyższą otrzymałem. Sprzedający oświadcza, że nie jest podatnikiem vat. Sprzedający wyraża zgodę na przetwarzanie danych osobowych przez {{ team.short_name }} {{ team.owner_name }}.</p>
                     </div>
                 </div>
@@ -277,17 +273,10 @@
                 </div>
             </div>
 
-            <hr>
-
             <div class="client-info">
                 <p><strong>SPRZEDAJĄCY:</strong> {{ receipt.client_name }}</p>
                 <p><strong>ADRES:</strong> {{ receipt.client_address1 }}, {{ receipt.client_zipcode }} {{ receipt.client_place }}</p>
                 <p><strong>NR DOKUMENTU:</strong> {{ receipt.client_doc_number }}</p>
-                <!-- <div class="container">
-                    <p class="left-split"><strong>Żródło pochodzenia:</strong></p>
-                    <p class="right-split"><strong>/ Rodzaj odpadu:</strong></p>
-                </div> -->
-                <div class="space-bottom"></div>
             </div>
 
             <hr>
@@ -342,12 +331,12 @@
             <hr>
 
             <div class="footer">
-                <div class="container info">
-                    <div class="info1">
+                <div class="columns info">
+                    <div class="col-12 info1">
                         <p><strong>Kopia formularza przyjęcia odpadów metali będzie przechowywana w zamkniętym pomieszczeniu, a po 5 LATACH ulegnie zniszczeniu. Dane osobowe nie będą udostępnione osobom niepowołanym.</strong></p>
                     </div>
 
-                    <div class="info2">
+                    <div class="col-12 info2">
                         <p>Sprzedający oświadcza, że przedmiot skupu stanowi jego własność, nie pochodzi z kradzieży i nie jest zajęty przez komornika. Sprzedający jest poinformowany o odpowiedzalności w przypadku składania fałszywego oświadczenia. Sprzedający wie, że cena skupu jest ceną umowną. Kwotę powyższą otrzymałem. Sprzedający oświadcza, że nie jest podatnikiem vat. Sprzedający wyraża zgodę na przetwarzanie danych osobowych przez {{ team.short_name }} {{ team.owner_name }}.</p>
                     </div>
                 </div>
