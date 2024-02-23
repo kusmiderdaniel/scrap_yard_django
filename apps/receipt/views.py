@@ -9,14 +9,18 @@ from rest_framework import viewsets
 from rest_framework import authentication, permissions
 from rest_framework.decorators import api_view, authentication_classes, permission_classes
 
-from .serializers import ReceiptSerializer, ReceiptEmptyItemSerializer
-from .models import Receipt, EmptyItem
+from .serializers import ReceiptSerializer, ReceiptItemSerializer, ReceiptEmptyItemSerializer
+from .models import Receipt, ReceiptItem, EmptyItem
 
 from apps.team.models import Team
 
 class ReceiptEmptyItemViewSet(viewsets.ModelViewSet):
     serializer_class = ReceiptEmptyItemSerializer
     queryset = EmptyItem.objects.all()
+
+class ReceiptItemViewSet(viewsets.ModelViewSet):
+    serializer_class = ReceiptItemSerializer
+    queryset = ReceiptItem.objects.all()
 
 class ReceiptViewSet(viewsets.ModelViewSet):
     serializer_class = ReceiptSerializer
