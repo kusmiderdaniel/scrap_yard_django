@@ -87,6 +87,7 @@
         .info1, .info2 {
             font-size: 0.7em;
             text-align: justify;
+            margin-bottom: 1.2rem;
         }
 
         .table {
@@ -211,47 +212,46 @@
                                 <td></td>
                                 <td></td>
                             </tr>
-                            {% endfor %}
-                        </tbody>
-                        <tfoot>
-                            <tr class="table-summary tfoot-no-borders">
-                                <td>DO WYPŁATY</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>{{ receipt.gross_amount }} zł</td>
-                            </tr>
-                        </tfoot>
-                    </table>
-                </div>
-    
-                <hr>
-    
-                <div class="footer">
-                    <div class="columns info">
-                        <div class="col-12 info1">
-                            <p><strong>Kopia formularza przyjęcia odpadów metali będzie przechowywana w zamkniętym pomieszczeniu, a po 5 LATACH ulegnie zniszczeniu. Dane osobowe nie będą udostępnione osobom niepowołanym.</strong></p>
-                        </div>
-    
-                        <div class="col-12 info2">
-                            <p>Sprzedający oświadcza, że przedmiot skupu stanowi jego własność, nie pochodzi z kradzieży i nie jest zajęty przez komornika. Sprzedający jest poinformowany o odpowiedzalności w przypadku składania fałszywego oświadczenia. Sprzedający wie, że cena skupu jest ceną umowną. Kwotę powyższą otrzymałem. Sprzedający oświadcza, że nie jest podatnikiem vat. Sprzedający wyraża zgodę na przetwarzanie danych osobowych przez {{ team.short_name }} {{ team.owner_name }}.</p>
-                        </div>
+                        {% endfor %}
+                    </tbody>
+                    <tfoot>
+                        <tr class="table-summary tfoot-no-borders">
+                            <td>DO WYPŁATY</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>{{ receipt.gross_amount }} zł</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+
+            <hr>
+
+            <div class="footer">
+                <div class="columns info">
+                    <div class="col-12 info1">
+                        <p><strong>Kopia formularza przyjęcia odpadów metali będzie przechowywana w zamkniętym pomieszczeniu, a po 5 LATACH ulegnie zniszczeniu. Dane osobowe nie będą udostępnione osobom niepowołanym.</strong></p>
                     </div>
-    
-                    <hr>
-    
-                    <div class="container">
-                        <div class="left-split text-center">
-                            <p>SPRZEDAJĄCY</p>
-                            <p>&nbsp;</p>
-                            <p>..........................</p>
-                        </div>
-                        <div class="right-split text-center">
-                            <p>KUPUJĄCY</p>
-                            <p>&nbsp;</p>
-                            <p>..........................</p>
-                        </div>
+
+                    <div class="col-12 info2">
+                        <p>Sprzedający oświadcza, że przedmiot skupu stanowi jego własność, nie pochodzi z kradzieży i nie jest zajęty przez komornika. Sprzedający jest poinformowany o odpowiedzalności w przypadku składania fałszywego oświadczenia. Sprzedający wie, że cena skupu jest ceną umowną. Kwotę powyższą otrzymałem. Sprzedający oświadcza, że nie jest podatnikiem vat. Sprzedający wyraża zgodę na przetwarzanie danych osobowych przez {{ team.short_name }} {{ team.owner_name }}.</p>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="container">
+                    <div class="left-split text-center">
+                        <p>SPRZEDAJĄCY</p>
+                        <p>&nbsp;</p>
+                        <p>..........................</p>
+                    </div>
+                    <div class="right-split text-center">
+                        <p>KUPUJĄCY</p>
+                        <p>&nbsp;</p>
+                        <p>..........................</p>
                     </div>
                 </div>
             </div>
@@ -322,51 +322,50 @@
                                 <td></td>
                                 <td></td>
                             </tr>
-                            {% endfor %}
-                        </tbody>
-                        <tfoot>
-                            <tr class="table-summary tfoot-no-borders">
-                                <td>DO WYPŁATY</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>{{ receipt.gross_amount }} zł</td>
-                            </tr>
-                        </tfoot>
-                    </table>
-                </div>
-    
-                <hr>
-    
-                <div class="footer">
-                    <div class="columns info">
-                        <div class="col-12 info1">
-                            <p><strong>Kopia formularza przyjęcia odpadów metali będzie przechowywana w zamkniętym pomieszczeniu, a po 5 LATACH ulegnie zniszczeniu. Dane osobowe nie będą udostępnione osobom niepowołanym.</strong></p>
-                        </div>
-    
-                        <div class="col-12 info2">
-                            <p>Sprzedający oświadcza, że przedmiot skupu stanowi jego własność, nie pochodzi z kradzieży i nie jest zajęty przez komornika. Sprzedający jest poinformowany o odpowiedzalności w przypadku składania fałszywego oświadczenia. Sprzedający wie, że cena skupu jest ceną umowną. Kwotę powyższą otrzymałem. Sprzedający oświadcza, że nie jest podatnikiem vat. Sprzedający wyraża zgodę na przetwarzanie danych osobowych przez {{ team.short_name }} {{ team.owner_name }}.</p>
-                        </div>
+                        {% endfor %}
+                    </tbody>
+                    <tfoot>
+                        <tr class="table-summary tfoot-no-borders">
+                            <td>DO WYPŁATY</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>{{ receipt.gross_amount }} zł</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+
+            <hr>
+
+            <div class="footer">
+                <div class="columns info">
+                    <div class="col-12 info1">
+                        <p><strong>Kopia formularza przyjęcia odpadów metali będzie przechowywana w zamkniętym pomieszczeniu, a po 5 LATACH ulegnie zniszczeniu. Dane osobowe nie będą udostępnione osobom niepowołanym.</strong></p>
                     </div>
-    
-                    <hr>
-    
-                    <div class="container">
-                        <div class="left-split text-center">
-                            <p>SPRZEDAJĄCY</p>
-                            <p>&nbsp;</p>
-                            <p>..........................</p>
-                        </div>
-                        <div class="right-split text-center">
-                            <p>KUPUJĄCY</p>
-                            <p>&nbsp;</p>
-                            <p>..........................</p>
-                        </div>
+
+                    <div class="col-12 info2">
+                        <p>Sprzedający oświadcza, że przedmiot skupu stanowi jego własność, nie pochodzi z kradzieży i nie jest zajęty przez komornika. Sprzedający jest poinformowany o odpowiedzalności w przypadku składania fałszywego oświadczenia. Sprzedający wie, że cena skupu jest ceną umowną. Kwotę powyższą otrzymałem. Sprzedający oświadcza, że nie jest podatnikiem vat. Sprzedający wyraża zgodę na przetwarzanie danych osobowych przez {{ team.short_name }} {{ team.owner_name }}.</p>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="container">
+                    <div class="left-split text-center">
+                        <p>SPRZEDAJĄCY</p>
+                        <p>&nbsp;</p>
+                        <p>..........................</p>
+                    </div>
+                    <div class="right-split text-center">
+                        <p>KUPUJĄCY</p>
+                        <p>&nbsp;</p>
+                        <p>..........................</p>
                     </div>
                 </div>
             </div>
         </div>
-    </div>          
+    </div>       
 </body>
 </html>
