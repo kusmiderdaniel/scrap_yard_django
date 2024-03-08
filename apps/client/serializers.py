@@ -10,7 +10,8 @@ class ClientReceiptSerializer(serializers.ModelSerializer):
             "id",
             "date",
             "receipt_number",
-            "gross_amount"
+            "gross_amount",
+            "total_quantity"
         )
 
 class ClientSerializer(serializers.ModelSerializer):
