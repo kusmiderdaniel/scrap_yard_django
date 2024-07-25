@@ -16,6 +16,7 @@ class ReceiptItemSerializer(serializers.ModelSerializer):
             "item_code",
             "quantity",
             "buy_price",
+            "sell_price",
             "gross_amount",
         )
     
