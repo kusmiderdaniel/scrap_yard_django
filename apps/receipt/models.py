@@ -38,7 +38,7 @@ class ReceiptItem(models.Model):
     item_code = models.CharField(max_length=6, null=True)
     quantity = models.FloatField(default=1.00)
     buy_price = models.DecimalField(max_digits=6, decimal_places=2)
-    sell_price = models.DecimalField(max_digits=6, decimal_places=2, default=0)
+    sell_price = models.DecimalField(max_digits=6, decimal_places=2, default=0, null=True)
     gross_amount = models.DecimalField(max_digits=6, decimal_places=2)
 
     def __str__(self):
